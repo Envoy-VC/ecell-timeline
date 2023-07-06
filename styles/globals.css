@@ -9,25 +9,3 @@
 		font-family: 'Poppins', sans-serif;
 	}
 }
-
-@layer components {
-	.group-date {
-		@apply px-3 py-4 text-4xl font-bold tracking-widest text-gray-300;
-	}
-
-	.timeline {
-		@apply py-16 mt-3 ml-3 border-l-4 border-gray-200 space-y-14;
-	}
-
-	.dot {
-		@apply absolute top-5 -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-white;
-	}
-
-	.timeline-date {
-		@apply text-xs font-bold tracking-widest opacity-40;
-	}
-
-	.timeline-title {
-		@apply mb-2 text-3xl font-semibold tracking-wide text-gray-600;
-	}
-}

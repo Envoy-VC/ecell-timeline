@@ -4,7 +4,7 @@ import { TimelineSections } from '@/utils';
 
 const TimelineSection = () => {
 	return (
-		<div>
+		<div className='max-w-screen-md'>
 			{TimelineSections.map((section, index) => (
 				<Timeline key={index} {...section} />
 			))}
