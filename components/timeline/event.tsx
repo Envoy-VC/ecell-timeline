@@ -24,12 +24,12 @@ const TimelineEvent = ({ date, title, description }: Props) => {
 	);
 
 	return (
-		<motion.div className='relative' style={{ opacity }} ref={childRef}>
+		<div className='relative' ref={childRef}>
 			<div
 				className='hover:animate-ping absolute top-5 -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-white'
 				title='current event'
 			></div>
-			<div className='pl-10'>
+			<motion.div className='pl-10' style={{ opacity }}>
 				<span className='text-xs font-bold tracking-widest opacity-40'>
 					{date}
 				</span>
@@ -37,8 +37,8 @@ const TimelineEvent = ({ date, title, description }: Props) => {
 					{title}
 				</h3>
 				<p className='text-gray-500'>{description}</p>
-			</div>
-		</motion.div>
+			</motion.div>
+		</div>
 	);
 };
 
